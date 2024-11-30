@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lessons</title>
+    <link rel="stylesheet" href="ensarc.css">
+</head>
+<body>
+    <header>
+        <h1>Learn HTML: Step-by-Step Lessons</h1>
+        <nav>
+            <ul>
+                <li><a href="Codeman.html">Home</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="code3.html">Practice</a></li>
+                <li><a href="code4.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Lesson 1: What is HTML?</h2>
+            <p>HTML (Hypertext Markup Language) is the standard language for creating web pages. It defines the structure of your content on the web.</p>
+            <p>HTML is made up of elements, which are the building blocks of web pages. Each element is defined by a pair of opening and closing tags.</p>
+        </section>
+
+        <section>
+            <h2>Lesson 2: Basic HTML Structure</h2>
+            <p>Every HTML document follows a basic structure:</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Page Title&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+                        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+            <p>This structure includes the <code>&lt;head&gt;</code> section for meta information (like the page title) and the <code>&lt;body&gt;</code> section for visible content like text and images.</p>
+        </section>
+
+        <section>
+            <h2>Lesson 3: HTML Elements and Tags</h2>
+            <p>HTML elements are the building blocks of web pages. They are enclosed within opening and closing tags.</p>
+            <p>Some common HTML elements:</p>
+            <ul>
+                <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> for headings</li>
+                <li><code>&lt;p&gt;</code> for paragraphs</li>
+                <li><code>&lt;a&gt;</code> for links</li>
+                <li><code>&lt;img&gt;</code> for images</li>
+                <li><code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> for lists</li>
+            </ul>
+            <p>Example of an HTML element:</p>
+            <pre>
+                &lt;a href="https://www.example.com"&gt;Click here&lt;/a&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Lesson 4: Attributes</h2>
+            <p>HTML elements can have attributes, which provide additional information about the element. For example, the <code>&lt;a&gt;</code> (anchor) tag uses the <code>href</code> attribute to define the destination of the link:</p>
+            <pre>
+                &lt;a href="https://www.example.com"&gt;Click here&lt;/a&gt;
+            </pre>
+            <p>Attributes are written inside the opening tag and usually consist of a name and a value (e.g., <code>href="https://www.example.com"</code>).</p>
+        </section>
+
+        <section>
+            <h2>Lesson 5: Lists in HTML</h2>
+            <p>HTML allows you to create two types of lists:</p>
+            <ul>
+                <li><strong>Unordered List:</strong> A list with bullet points.</li>
+                <li><strong>Ordered List:</strong> A list with numbers or letters.</li>
+            </ul>
+            <p>Examples:</p>
+            <pre>
+                &lt;ul&gt;
+                    &lt;li&gt;Item 1&lt;/li&gt;
+                    &lt;li&gt;Item 2&lt;/li&gt;
+                &lt;/ul&gt;
+
+                &lt;ol&gt;
+                    &lt;li&gt;First item&lt;/li&gt;
+                    &lt;li&gt;Second item&lt;/li&gt;
+                &lt;/ol&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Lesson 6: Forms in HTML</h2>
+            <p>Forms are used to collect user input. You can use the <code>&lt;form&gt;</code> element to create a form, and different input types such as text boxes, radio buttons, and checkboxes to collect information.</p>
+            <p>Example of a simple form:</p>
+            <pre>
+                &lt;form action="/submit" method="post"&gt;
+                    &lt;label for="name"&gt;Name:&lt;/label&gt;
+                    &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;
+                    &lt;input type="submit" value="Submit"&gt;
+                &lt;/form&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Lesson 7: Multimedia in HTML</h2>
+            <p>HTML allows you to embed multimedia like images, audio, and video.</p>
+            <p>Examples:</p>
+            <pre>
+                &lt;img src="image.jpg" alt="Description"&gt;
+                &lt;audio controls&gt;
+                    &lt;source src="audio.mp3" type="audio/mp3"&gt;
+                    Your browser does not support the audio element.
+                &lt;/audio&gt;
+                &lt;video width="320" height="240" controls&gt;
+                    &lt;source src="movie.mp4" type="video/mp4"&gt;
+                &lt;/video&gt;
+            </pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Learn HTML. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

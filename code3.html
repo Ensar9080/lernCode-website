@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practice</title>
+    <link rel="stylesheet" href="ensarc.css">
+    <style>
+        /* Additional styles for the practice page */
+        .editor-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .editor, .output {
+            width: 48%;
+            height: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+
+        .output {
+            background-color: #f4f4f4;
+            overflow-y: scroll;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Practice</h1>
+        <nav>
+            <ul>
+                <li><a href="Codeman.html">Home</a></li>
+                <li><a href="code2.html">Lessons</a></li>
+                <li><a href="code3.html">Practice</a></li>
+                <li><a href="code4.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Write Your HTML Code Below</h2>
+            <div class="editor-container">
+                <div class="editor">
+                    <h3>HTML Code Editor</h3>
+                    <textarea id="htmlCode" rows="15" placeholder="Write your HTML code here..."></textarea>
+                </div>
+
+                <div class="output">
+                    <h3>Output</h3>
+                    <iframe id="resultFrame" style="width: 100%; height: 100%; border: none;"></iframe>
+                </div>
+            </div>
+            <button onclick="showOutput()">Run Code</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Learn HTML. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function showOutput() {
+            const code = document.getElementById("htmlCode").value;
+            const iframe = document.getElementById("resultFrame");
+            iframe.contentDocument.open();
+            iframe.contentDocument.write(code);
+            iframe.contentDocument.close();
+        }
+    </script>
+</body>
+</html>
